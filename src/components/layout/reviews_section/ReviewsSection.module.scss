@@ -5,32 +5,11 @@
     text-align: center;
 }
 
-.iconBadge {
-    width: 2rem;
-}
+.badge {
+    background-color: $white;
+    padding: .5rem 1rem;
+    color: $color-primary;}
 
-.infoRating {
-    display: flex;
-    align-items: center;
-    gap: $space-2   ;
-    margin-top: $space-2;
-
-    .rating {
-        font-size: $font-xl;
-        font-weight: 700;
-    }
-
-    .text {
-        font-size: $font-sm;
-        color: $foreground-muted;
-    }
-
-    .stars {
-        display: flex;
-        gap: .3rem;
-        color: $color-yellow;
-    }
-}
 
 .items {
     width: 100%;
@@ -44,8 +23,3 @@
     }
 }
 
-.cta {
-    margin-top: $space-4;
-    display: flex;
-    justify-content: center;
-}

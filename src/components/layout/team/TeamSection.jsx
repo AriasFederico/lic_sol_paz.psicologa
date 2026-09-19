@@ -3,7 +3,7 @@ import { SectionLayout } from '../';
 import styles from './TeamSection.module.scss';
 
 export const TeamSection = ({ data }) => {
-  const { title, subtitle, items } = data;
+  const { title, subtitle, items, about } = data;
   return (
     <SectionLayout>
       <div className={styles.container}>
@@ -13,16 +13,23 @@ export const TeamSection = ({ data }) => {
         </div>
 
         <div className={styles.items}>
-          {items?.map(({ image, name, speciality, cta, id }) => (
-            // Subtítulo de referencia del contenido.
-            <ProfesionalCard
-              key={id}
-              image={image}
-              name={name}
-              speciality={speciality}
-              cta={cta}
-            />
-          ))}
+          <div className={styles.item}>
+            {items?.map(({ image, name, speciality, cta, id }) => (
+              // Subtítulo de referencia del contenido.
+              <ProfesionalCard
+                key={id}
+                image={image}
+                name={name}
+                speciality={speciality}
+                cta={cta}
+              />
+            ))}
+          </div>
+          <div className={styles.about}>
+            {about?.map((item, index) => (
+              <p key={index}>{item}</p>
+            ))}
+          </div>
         </div>
       </div>
     </SectionLayout>

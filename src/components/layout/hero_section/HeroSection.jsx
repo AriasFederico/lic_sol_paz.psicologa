@@ -4,7 +4,7 @@ import { HeroLayout } from '../';
 import styles from './HeroSection.module.scss';
 
 export const HeroSection = ({ data }) => {
-  const { badge, title } = data;
+  const { badge, title, subtitle, ctas } = data;
   return (
     <HeroLayout bgImage>
       <div className={styles.container}>
@@ -18,19 +18,15 @@ export const HeroSection = ({ data }) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.35 }} className={styles.subtitle}>
-            Descripción de referencia. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.
+            {subtitle}
           </motion.p>
           <motion.div className={styles.cta} initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.45 }}>
-            <ButtonCta
-              icon={'message'}
-              label={'Reserva de turnos'}
-              variant='secondary'
-            />
-            <ButtonCta label={'Servicios'} variant='primary' />
+            {ctas?.map(({ icon, label, href, variant }) => (
+              <ButtonCta icon={icon} label={label} href={href} variant={variant} />
+            ))}
           </motion.div>
         </div>
       </div>

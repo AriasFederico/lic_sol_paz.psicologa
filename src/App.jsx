@@ -35,11 +35,11 @@ function App() {
       <HeroSection data={hero} />
       <ServicesSection data={services} />
       <TeamSection data={team} />
-      <AboutSection data={about} />
+      {/* <AboutSection data={about} /> */}
       <ReviewsSection data={reviews_section} />
       <FaqSection data={faq_section} />
       <CtaSection data={cta_section} />
-      <Coverage data={coverage_section} />
+      {/* <Coverage data={coverage_section} /> */}
       <LocationSection data={location_section} />
       <Footer data={footer} />
       {/* eliminar  */}

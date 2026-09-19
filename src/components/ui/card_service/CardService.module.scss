@@ -1,9 +1,10 @@
 .card {
     background-color: $white;
-    padding: $space-2;
+    padding: $space-3;
     border-radius: $radius-sm;
     margin-bottom: $space-2;
     transition: $transition-normal;
+    height: 100%;
 
     &:hover {
         transform: translateY(-20px);

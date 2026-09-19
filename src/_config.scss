@@ -3,9 +3,9 @@
 // ==========================================
 
 // Tonos Principales (Cambias estos 3 por cada cliente/marca)
-$color-primary:         #4a4d58;
-$color-primary-muted:   rgba(#4a4d58, 0.15); // Uso de rgba/SCSS para transparencias limpias
-$color-primary-dark:    #4a4d58;
+$color-primary:         #8b6755;
+$color-primary-muted:   rgba(#8b6755, 0.15); // Uso de rgba/SCSS para transparencias limpias
+$color-primary-dark:    #8b6755;
 
 // Colores de Estado / Feedback (Estándar)
 $color-success:            #34a853;
@@ -19,7 +19,7 @@ $color-yellow: #f9bb04;
 // Escala de Grises (Superficies y Textos)
 $white:                 #ffffff;
 $bg-main:               #ffffff; // Blanco limpio (ideal para Salud)
-$bg-soft:               #f4f4f4; // Gris muy suave para alternar secciones
+$bg-soft:               #f6f2ee; // Gris muy suave para alternar secciones
 $bg-dark:               #4a4d58; // Para footers o secciones contrastadas
 
 $foreground:            #5a5a5a; // Texto principal (casi negro para máxima legibilidad)
@@ -49,9 +49,10 @@ $font-3xl:  2.5rem;   // 40px
 $font-4xl:  3.5rem;   // 56px (Hero)
 
 // Fuentes
-$font-heading: "Inter", sans-serif;
+$font-heading: "Playfair Display", serif;
 $font-primary: "Inter", sans-serif;
 $font-code:    monospace;
+
 
 $weight-regular: 400;
 $weight-medium:  500;

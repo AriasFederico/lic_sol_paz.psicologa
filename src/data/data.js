@@ -1,11 +1,12 @@
 // imagenes con nombre de profesionales
+import imagen_ref from '../assets/ref.png'
 //
 
 const clinicInfo = {
-  name: 'lumen',
-  phone_number: '5491234567',
-  hours: 'Lun a Vie: 9-20 hs · Sáb: 9-13 hs',
-  location: 'Dirección de referencia 1234, Ciudad',
+  name: 'Lic. Sol Paz',
+  phone_number: '',
+  hours: 'Atención con turno previo',
+  location: 'Atención presencial y online',
 };
 
 const { name, phone_number } = clinicInfo;
@@ -25,195 +26,95 @@ export const landing_data = {
     },
 
     nav_links: [
+      { id: 'about', label: 'Sobre mí', href: '#about' },
       { id: 'services', label: 'Servicios', href: '#services' },
-      { id: 'reviews', label: 'Opiniones', href: '#reviews' },
-      { id: 'location', label: 'Ubicación', href: '#location' },
+      { id: 'faq', label: 'Preguntas frecuentes', href: '#faq' },
+      { id: 'location', label: 'Contacto', href: '#location' },
     ],
     cta: {
       icon: 'message',
       label: 'Reserva de turnos',
-      href: '#',
+      href: buildWaLink('Hola Lic. Sol Paz, quisiera consultar por un turno.'),
       size: 'sm',
       variant: 'secondary',
     },
   },
 
   hero: {
-    badge: 'Texto de referencia para el badge',
-    title: 'Título de tu consultorio.',
-    cta: {
+    badge: 'Psicoanálisis Infanto-Juvenil',
+    title: 'Un espacio de escucha y acompañamiento',
+    subtitle:'Brindo un espacio cálido, seguro y libre de juicios para acompañar a cada paciente respetando sus tiempos y particularidades.',
+    ctas: [{
       icon: 'message',
-      label: 'Reserva de turnos',
+      label: 'Agendar consulta',
       href: '#',
       size: '',
       variant: 'secondary',
     },
+    {
+      label: 'Servicios',
+      href: '#services',
+      size: '',
+      variant: 'primary',}]
   },
 
   services: {
-    title: 'Servicios',
-    subtitle: 'Subtítulo de referencia del contenido.',
+    title: 'Servicios y Áreas de Atención',
+    subtitle: 'Acompañamiento especializado adaptado a cada etapa del desarrollo.',
 
     // cards
     items: [
       {
-        icon: 'icon',
+        icon: 'child',
         id: 1,
-        title: 'Título del servicio',
-        desc: 'Descripción de referencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        title: 'Psicología Infantil',
+        desc: 'Espacio terapéutico a través del juego y la palabra para abordar dificultades emocionales, conductuales o escolares en los más chicos.',
         cta: {
           icon: 'message',
           label: 'Consultar por este servicio',
-          href: '#',
+          href: buildWaLink('Hola Lic. Sol Paz, quisiera consultar sobre la atención en Psicología Infantil.'),
         },
         delay: '.15',
       },
       {
-        icon: 'icon',
+        icon: 'user',
         id: 2,
-        title: 'Título del servicio',
-        desc: 'Descripción de referencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        title: 'Atención a Púberes y Adolescentes',
+        desc: 'Acompañamiento en etapas de cambio, duelo, manejo de ansiedades, identidad y vínculos en la transición hacia la juventud.',
         cta: {
           icon: 'message',
           label: 'Consultar por este servicio',
-          href: '#',
+          href: buildWaLink('Hola Lic. Sol Paz, quisiera consultar sobre la atención en Psicología Infantil.'),
         },
         delay: '.15',
       },
       {
-        icon: 'icon',
+        icon: 'users',
         id: 3,
-        title: 'Título del servicio',
-        desc: 'Descripción de referencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        title: 'Orientación a Padres y Familias',
+        desc: 'Espacio de asesoramiento y escucha para padres frente a los desafíos en la crianza y la dinámica familiar.',
         cta: {
           icon: 'message',
           label: 'Consultar por este servicio',
-          href: '#',
+          href: buildWaLink('Hola Lic. Sol Paz, quisiera consultar sobre Orientación a Padres/Familias.'),
         },
         delay: '.15',
-      },
-      {
-        icon: 'icon',
-        id: 4,
-        title: 'Título del servicio',
-        desc: 'Descripción de referencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        cta: {
-          icon: 'message',
-          label: 'Consultar por este servicio',
-          href: '#',
-        },
-        delay: '.25',
-      },
-      {
-        icon: 'icon',
-        id: 5,
-        title: 'Título del servicio',
-        desc: 'Descripción de referencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        cta: {
-          icon: 'message',
-          label: 'Consultar por este servicio',
-          href: '#',
-        },
-        delay: '.25',
-      },
-      {
-        icon: 'icon',
-        id: 6,
-        title: 'Título del servicio',
-        desc: 'Descripción de referencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        cta: {
-          icon: 'message',
-          label: 'Consultar por este servicio',
-          href: '#',
-        },
-        delay: '.25',
-      },
+      },]},
 
-      // MOTRAR MAS ///////////////////////////////////////////////////////////////////////////////////
 
-      {
-        icon: 'icon',
-        id: 7,
-        title: 'Título del servicio',
-        desc: 'Descripción de referencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        cta: {
-          icon: 'message',
-          label: 'Consultar por este servicio',
-          href: '#',
-          variant: 'tertiary',
-        },
-        delay: '.15',
-      },
-      {
-        icon: 'icon',
-        id: 8,
-        title: 'Título del servicio',
-        desc: 'Descripción de referencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        cta: {
-          icon: 'message',
-          label: 'Consultar por este servicio',
-          href: '#',
-          variant: 'tertiary',
-        },
-        delay: '.15',
-      },
-      {
-        icon: 'icon',
-        id: 9,
-        title: 'Título del servicio',
-        desc: 'Descripción de referencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        cta: {
-          icon: 'message',
-          label: 'Consultar por este servicio',
-          href: '#',
-          variant: 'tertiary',
-        },
-        delay: '.15',
-      },
-    ],
-    cta: { icon: '', label: 'Mostrar más', variant: 'tertiary' },
-  },
 
   team: {
-    title: 'Profesionales',
-    subtitle: 'Subtítulo de referencia del contenido.',
+    title: 'Profesional a cargo',
+    subtitle: 'Atención personalizada y compromiso ético.',
     items: [
       {
         id: 2,
         image: {
-          src: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80',
+          src: imagen_ref,
           alt: 'Profesional',
         },
-        name: 'Lic. Nombre Apellido',
-        speciality: 'Rol del profesional',
-        cta: {
-          icon: 'message',
-          label: 'Reservar turno',
-          href: '#',
-        },
-      },
-      {
-        id: 3,
-        image: {
-          src: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80',
-          alt: 'Profesional',
-        },
-        name: 'Lic. Nombre Apellido',
-        speciality: 'Rol del profesional',
-        cta: {
-          icon: 'message',
-          label: 'Reservar turno',
-          href: '#',
-        },
-      },
-      {
-        id: 4,
-        image: {
-          src: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&q=80',
-          alt: 'Profesional',
-        },
-        name: 'Lic. Nombre Apellido',
-        speciality: 'Rol del profesional',
+        name: 'Lic. Sol Evelyn Paz',
+        speciality: 'Psicóloga clínica',
         cta: {
           icon: 'message',
           label: 'Reservar turno',
@@ -221,6 +122,12 @@ export const landing_data = {
         },
       },
     ],
+    about: [
+      '¿Quién soy? — Soy Evelyn Paz, psicóloga clínica. Elegí la psicología porque siempre me interesó comprender lo que hay detrás de lo que sentimos, pensamos y hacemos.',
+      'Creo profundamente en la importancia de tener un espacio donde podamos hablar sin sentirnos juzgados.',
+      '¿Por qué elegí Psicología? — Elegí esta profesión porque quería acompañar a las personas en momentos en los que quizás no encuentran cómo poner en palabras lo que les pasa. Porque detrás de una conducta, un enojo, un silencio o una dificultad, siempre hay algo que necesita ser escuchado.',
+      '¿Para qué estudié? — Me formé para poder brindar herramientas que ayuden a comprender lo que sucede, desarrollar recursos y transitar las dificultades de una manera diferente. La terapia no se trata solamente de "resolver un problema", sino también de conocerse, expresarse y construir nuevas posibilidades.',
+      'Mi forma de trabajar — Busco construir un espacio cálido, seguro y sin juicios, donde cada persona pueda sentirse escuchada y comprendida. Trabajo respetando los tiempos y las particularidades de cada paciente.']
   },
 
   about: {
@@ -247,11 +154,9 @@ export const landing_data = {
   },
 
   reviews_section: {
-    badge: 'Opiniones de Google',
-    title: 'Opiniones',
-    stars: 5,
-    rating: '0.0',
-    text: '· 0 reseñas',
+    badge: {icon:'star', label:'escucha y acompañamiento'},
+    title: 'Testimonios',
+    subtitle:'Por razones éticas y de confidencialidad, los testimonios se comparten preservando la identidad de pacientes y familias.',
 
     items: [
       {
@@ -259,21 +164,21 @@ export const landing_data = {
         name: 'Nombre Apellido',
         rating: 5,
         review:
-          'Opinión de referencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+          'Nos sentimos contenidos durante todo el proceso',
       },
       {
         id: 2,
         name: 'Nombre Apellido',
         rating: 5,
         review:
-          'Opinión de referencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+          'Pudimos comprender mejor lo que le estaba pasando a nuestro hijo.',
       },
       {
         id: 3,
         name: 'Nombre Apellido',
         rating: 5,
         review:
-          'Opinión de referencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+          'Encontramos un espacio de confianza para hablar',
       },
     ],
 
@@ -285,18 +190,20 @@ export const landing_data = {
   },
 
   cta_section: {
-    title: 'Titulo',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+    title: '¿Necesitás coordinar una primera entrevista?',
+    text: 'Escribime para despejar tus dudas o agendar un turno. Construyamos juntos un espacio de escucha para acompañar a tu hijo o familia.',
     cta: [
       {
         icon: 'message',
         label: 'Reservar turno',
         variant: 'secondary',
+        href:buildWaLink('Hola Lic. Sol Paz, quisiera agendar una primera entrevista.'),
       },
       {
         icon: '',
         label: 'Ubicación',
         variant: '',
+        href:'#location'
       },
     ],
   },
@@ -392,8 +299,8 @@ export const landing_data = {
     cta: { icon: 'message', label: 'Reserva de turnos', variant: '' },
 
     rrss: [
-      { icon: 'facebook', href: '#' },
-      { icon: 'instagram', href: '#' },
+      { icon: 'facebook', href: 'https://www.facebook.com/groups/974306967539760/user/100000068052718/?locale=es_LA' },
+      { icon: 'instagram', href: 'https://www.instagram.com/lic_sol_paz.psicologa/?hl=es-la' },
     ],
 
     copyright: `© 2026 ${clinicInfo.name}. Todos los derechos reservados.`,

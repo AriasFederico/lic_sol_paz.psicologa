@@ -50,14 +50,14 @@ export const ServicesSection = ({ data }) => {
         </motion.div>
 
         {/* El botón permanece siempre visible y cambia su texto */}
-        <div className={styles.cta}>
+        {/* <div className={styles.cta}>
           <ButtonCta
             label={isExpanded ? 'Mostrar menos' : 'Mostrar más'}
             size='sm'
             icon={isExpanded ? 'arrowUp' : 'arrowDown'}
             onClick={toggleShowMore}
           />
-        </div>
+        </div> */}
       </div>
     </SectionLayout>
   );

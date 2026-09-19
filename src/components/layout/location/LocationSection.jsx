@@ -6,7 +6,7 @@ import styles from './LocationSection.module.scss';
 export const LocationSection = ({ data }) => {
     const { coordenates, title, subtitle, items, ctas } = data;
     return (
-        <SectionLayout>
+        <SectionLayout id={'location'}>
             <div className={styles.container}>
                 <div className={styles.header}>
                     <h2 className={styles.title}>{title}</h2>

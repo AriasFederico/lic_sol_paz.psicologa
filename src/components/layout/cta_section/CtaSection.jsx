@@ -11,7 +11,7 @@ export const CtaSection = ({ data }) => {
                     <p className={styles.text}>{text}</p>
                     <div className={styles.cta}>
                         {cta?.map(({ icon, label, variant, href }) => (
-                            <ButtonCta label={label} size='md' variant={variant} icon={icon} key={variant} />
+                            <ButtonCta label={label} size='md' variant={variant} icon={icon} key={variant} href={href} />
                         ))}
                     </div>
                 </div>

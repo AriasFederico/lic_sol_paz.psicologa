@@ -6,40 +6,8 @@
     border-radius: $radius-sm;
 }
 
-.avatar {
-    background-color: $bg-soft;
-    font-weight: 700;
-    width: 2rem;
-    height: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    padding: $space-3;
-}
-
-.profile {
-    display: flex;
-    align-items: center;
-    gap: $space-1;
-    font-weight: 700;
-}
-
-.stars {
-    color: $color-yellow;
-    display: flex;
-    gap: .2rem;
-    margin-top: $space-1;
-}
-
 .review {
-    margin-top: $space-2;
     font-size: $font-sm;
     color: $foreground-muted;
-}
-
-.google {
-    position: absolute;
-    right: $space-3;
-    top: $space-3;
+    padding: $space-2;
 }
