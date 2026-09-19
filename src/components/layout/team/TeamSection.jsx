@@ -5,7 +5,7 @@ import styles from './TeamSection.module.scss';
 export const TeamSection = ({ data }) => {
   const { title, subtitle, items, about } = data;
   return (
-    <SectionLayout>
+    <SectionLayout id={'team'}>
       <div className={styles.container}>
         <div className={styles.header}>
           <h2>{title}</h2>

@@ -26,7 +26,7 @@ export const landing_data = {
     },
 
     nav_links: [
-      { id: 'about', label: 'Sobre mí', href: '#about' },
+      { id: 'about', label: 'Sobre mí', href: '#team' },
       { id: 'services', label: 'Servicios', href: '#services' },
       { id: 'faq', label: 'Preguntas frecuentes', href: '#faq' },
       { id: 'location', label: 'Contacto', href: '#location' },

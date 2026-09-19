@@ -15,7 +15,7 @@ export const FaqSection = ({ data }) => {
     const { title, items } = data;
 
     return (
-        <SectionLayout>
+        <SectionLayout id={'faq'}>
             <div className={styles.container}>
                 <h2 className={styles.title}>{title}</h2>
 
