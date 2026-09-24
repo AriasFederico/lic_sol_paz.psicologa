@@ -1,5 +1,6 @@
 .container {
 
+
     .header {
         text-align: center;
 
@@ -25,8 +26,5 @@
             color: $foreground;
         }
 
-        @include desktop(){
-            flex-direction: row;
-        }
     }
 }
