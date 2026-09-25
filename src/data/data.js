@@ -5,7 +5,7 @@ import imagen_ref from '../assets/profesional.webp';
 
 const clinicInfo = {
   name: 'Lic. Sol Paz',
-  phone_number: '',
+  phone_number: '+5491166127689',
   hours: 'Atención con turno previo',
   location: 'Avenida Corrientes 2330, 4to oficina 407',
 };
@@ -50,7 +50,9 @@ export const landing_data = {
       {
         icon: 'message',
         label: 'Agendar consulta',
-        href: '#',
+        href: buildWaLink(
+          'Hola Lic. Sol Paz, quisiera consultar por un turno.',
+        ),
         size: '',
         variant: 'secondary',
       },
@@ -93,7 +95,7 @@ export const landing_data = {
           icon: 'message',
           label: 'Consultar por este servicio',
           href: buildWaLink(
-            'Hola Lic. Sol Paz, quisiera consultar sobre la atención en Psicología Infantil.',
+            'Hola Lic. Sol Paz, quisiera consultar sobre la atención a Púberes y Adolescentes.',
           ),
         },
         delay: '.15',
@@ -107,7 +109,7 @@ export const landing_data = {
           icon: 'message',
           label: 'Consultar por este servicio',
           href: buildWaLink(
-            'Hola Lic. Sol Paz, quisiera consultar sobre Orientación a Padres/Familias.',
+            'Hola Lic. Sol Paz, quisiera consultar sobre Orientación a Padres y Familias.',
           ),
         },
         delay: '.15',
@@ -130,7 +132,9 @@ export const landing_data = {
         cta: {
           icon: 'message',
           label: 'Reservar turno',
-          href: '#',
+          href: buildWaLink(
+            'Hola Lic. Sol Paz, quisiera consultar por un turno.',
+          ),
         },
       },
     ],
@@ -282,8 +286,18 @@ export const landing_data = {
       { icon: 'tel', name: 'Teléfono', info: clinicInfo.phone_number },
     ],
     ctas: [
-      { label: 'Google Maps', href: '#', variant: 'secondary' },
-      { label: 'Reservar turno', href: '#', variant: 'primary' },
+      {
+        label: 'Google Maps',
+        href: 'https://www.google.com/maps?ll=-34.604861,-58.399889&z=17&t=m&hl=es-ES&gl=US&mapclient=embed&q=34%C2%B036%2717.5%22S+58%C2%B023%2759.6%22W+-34.604861,+-58.399889@-34.6048611,-58.3998889',
+        variant: 'secondary',
+      },
+      {
+        label: 'Reservar turno',
+        href: buildWaLink(
+          'Hola Lic. Sol Paz, quisiera consultar por un turno.',
+        ),
+        variant: 'primary',
+      },
     ],
   },
 

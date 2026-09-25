@@ -22,6 +22,7 @@ export const CardService = ({ icon, title, desc, cta, delay }) => {
           label={cta.label}
           size='sm'
           variant={cta.variant}
+          href={cta.href}
         />
       </div>
     </motion.div>

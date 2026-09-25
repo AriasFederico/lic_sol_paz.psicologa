@@ -52,6 +52,7 @@ export const Header = ({ data }) => {
               onClick={() => setIsOpen(false)}
               label={cta.label}
               variant={cta.variant}
+              href={cta.href}
             />
           </div>
         </nav>
@@ -64,6 +65,7 @@ export const Header = ({ data }) => {
             icon={cta.icon}
             label={cta.label}
             variant={cta.variant}
+            href={cta.href}
           />
         </div>
         {/* ------------------------- */}
