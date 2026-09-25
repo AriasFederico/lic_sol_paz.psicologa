@@ -37,7 +37,7 @@ function App() {
       <TeamSection data={team} />
       {/* <AboutSection data={about} /> */}
       <ReviewsSection data={reviews_section} />
-      <FaqSection data={faq_section} />
+      {/* <FaqSectio/>n data={faq_section} /> */}
       <CtaSection data={cta_section} />
       {/* <Coverage data={coverage_section} /> */}
       <LocationSection data={location_section} />

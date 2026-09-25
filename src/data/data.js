@@ -1,5 +1,5 @@
 // imagenes con nombre de profesionales
-import imagen_ref from '../assets/ref.png';
+import imagen_ref from '../assets/profesional.webp';
 
 //
 
@@ -7,7 +7,7 @@ const clinicInfo = {
   name: 'Lic. Sol Paz',
   phone_number: '',
   hours: 'Atención con turno previo',
-  location: 'Atención presencial y online',
+  location: 'Avenida Corrientes 2330, 4to oficina 407',
 };
 
 const { name, phone_number } = clinicInfo;
@@ -142,29 +142,6 @@ export const landing_data = {
       'Mi objetivo como profesional no es decirle a una persona qué debería sentir, pensar o hacer. Mi función es ofrecer un espacio de escucha clínica en el que pueda poner en palabras aquello que muchas veces resulta difícil expresar, darle un lugar a lo que genera malestar y comenzar a construir otras posibilidades. Entiendo el espacio terapéutico como un lugar de encuentro, pero también como un espacio de trabajo. La escucha psicoanalítica requiere tiempo, compromiso y apertura para poder interrogar aquello que se repite, aquello que genera sufrimiento y también aquello que todavía no puede ser puesto en palabras.',
       'Mi formación profesional es un recorrido continuo. Considero que la práctica clínica implica una formación permanente y que un psicólogo no deja nunca de estudiar, preguntarse y revisar su propia práctica. Por este motivo, continúo participando de espacios de formación y posgrado vinculados al psicoanálisis y a la clínica. Actualmente desarrollo mi recorrido profesional articulando la práctica clínica con la formación académica, buscando profundizar cada vez más en las herramientas necesarias para acompañar las diferentes demandas que llegan al consultorio.',
       'Creo profundamente en la importancia de construir un espacio terapéutico basado en la escucha, el respeto por la singularidad y la posibilidad de que cada sujeto pueda encontrar sus propias palabras para aquello que le sucede. Porque muchas veces consultar no significa que algo esté necesariamente "mal", sino que existe una pregunta, una preocupación o un malestar que necesita ser escuchado y es justamente allí donde comienza el trabajo clínico.',
-    ],
-  },
-
-  about: {
-    title: 'Consultorio',
-    subtitle: 'Subtítulo de referencia del contenido.',
-    slides: [
-      {
-        src: 'https://media.base44.com/images/public/6aa06bba015b4b49d1737659/4907e4d45_generated_image.png/v1/fill/w_511,h_319,al_c,q_90,usm_0.66_1.00_0.01,enc_webp,quality_auto/4907e4d45_generated_image.webp',
-        alt: '2',
-      },
-      {
-        src: 'https://media.base44.com/images/public/6aa06bba015b4b49d1737659/4ad7e40e5_generated_image.png/v1/fill/w_511,h_319,al_c,q_90,usm_0.66_1.00_0.01,enc_webp,quality_auto/4ad7e40e5_generated_image.webp',
-        alt: '1',
-      },
-      {
-        src: 'https://media.base44.com/images/public/6aa06bba015b4b49d1737659/09563da99_generated_image.png/v1/fill/w_511,h_319,al_c,q_90,usm_0.66_1.00_0.01,enc_webp,quality_auto/09563da99_generated_image.webp',
-        alt: '4',
-      },
-      {
-        src: 'https://media.base44.com/images/public/6aa06bba015b4b49d1737659/7716add0e_generated_image.png/v1/fill/w_511,h_319,al_c,q_90,usm_0.66_1.00_0.01,enc_webp,quality_auto/7716add0e_generated_image.webp',
-        alt: '3',
-      },
     ],
   },
 

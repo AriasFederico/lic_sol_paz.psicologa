@@ -1,8 +1,11 @@
 import { Carrousel } from '../../ui';
 import { SectionLayout } from '../';
 import styles from './AboutSection.module.scss';
-export const AboutSection = ({ data }) => {
-  const { title, subtitle, slides } = data;
+import { about } from './about';
+export const AboutSection = () => {
+
+  const { title, subtitle, slides } = about;
+
   return (
     <SectionLayout bgVariant={'dark'}>
       <div className={styles.container}>
