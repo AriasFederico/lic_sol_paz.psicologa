@@ -267,7 +267,7 @@ export const landing_data = {
   location_section: {
     title: 'Dónde estamos',
     subtitle: 'Texto de referencia — reemplazá con la dirección real.',
-    coordenates: `34°56'21.2"S 57°58'26.9"W`,
+    coordenates: `34°36'17.5"S 58°23'59.6"W`,
     items: [
       {
         icon: 'location',
