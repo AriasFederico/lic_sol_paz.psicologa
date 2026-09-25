@@ -14,9 +14,13 @@
         margin-top: $space-4;
         display: flex;
         flex-direction: column;
-        // align-items: center;
+        align-items: center;
         gap:$space-6;
 
+        @include desktop(){
+            flex-direction: row;
+            align-items: start;
+        }
 
         .about {
             flex: 1;
@@ -26,8 +30,5 @@
             color: $foreground;
         }
 
-        @include desktop(){
-            flex-direction: row;
-        }
     }
 }
